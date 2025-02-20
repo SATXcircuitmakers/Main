@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Antonio Circuit Makers</title>
+    <title>San Antonio Circuit Makers - Technical Wiki</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,6 +17,13 @@
             color: white;
             padding: 2rem;
             text-align: center;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 50px; /* Adjust the height as needed */
         }
         .container {
             max-width: 800px;
@@ -54,55 +61,50 @@
         .cta-button:hover {
             background-color: #45a049;
         }
+        .back-to-main {
+            text-align: center;
+            margin: 1rem 0;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>San Antonio Circuit Makers</h1>
-        <p>Empowering the next generation of innovators through hands-on electronics education.</p>
-        <a href="#donate" class="cta-button">Donate Now</a>
-        <a href="#volunteer" class="cta-button">Volunteer</a>
+        <!-- Logo in the top-left corner -->
+        <img src="logo.png" alt="San Antonio Circuit Makers Logo" class="logo">
+        <h1>San Antonio Circuit Makers - Technical Wiki</h1>
+        <p>Your resource for technical documents, tutorials, and guides.</p>
+        <div class="back-to-main">
+            <a href="https://www.sanantoniocircuitmakers.com" class="cta-button">Back to Main Site</a>
+        </div>
     </header>
     <div class="container">
-        <h2>About Us</h2>
+        <h2>Technical Resources</h2>
         <p>
-            San Antonio Circuit Makers is a non-profit organization dedicated to teaching electronics, circuitry, and STEM skills to students of all ages. Our mission is to inspire creativity, innovation, and problem-solving through hands-on learning.
+            Welcome to the San Antonio Circuit Makers technical wiki! Here, you'll find a collection of documents, tutorials, and guides to help you learn and innovate.
         </p>
-        <h2>Our Programs</h2>
+        <h3>Documentation</h3>
+        <ul>
+            <li><a href="#">Introduction to Electronics</a></li>
+            <li><a href="#">Circuit Design Basics</a></li>
+            <li><a href="#">Soldering Techniques</a></li>
+            <li><a href="#">Microcontroller Programming</a></li>
+        </ul>
+        <h3>Tutorials</h3>
+        <ul>
+            <li><a href="#">Building Your First Circuit</a></li>
+            <li><a href="#">Using Arduino for Beginners</a></li>
+            <li><a href="#">Raspberry Pi Projects</a></li>
+            <li><a href="#">PCB Design and Fabrication</a></li>
+        </ul>
+        <h3>Guides</h3>
+        <ul>
+            <li><a href="#">Choosing the Right Components</a></li>
+            <li><a href="#">Troubleshooting Common Issues</a></li>
+            <li><a href="#">Advanced Circuit Analysis</a></li>
+        </ul>
+        <h2>Contribute</h2>
         <p>
-            We offer a variety of programs, including:
-            <ul>
-                <li>Workshops for beginners and advanced learners</li>
-                <li>Summer camps for kids and teens</li>
-                <li>Community outreach events</li>
-            </ul>
-        </p>
-        <h2>Get Involved</h2>
-        <p>
-            Join us in our mission to inspire the next generation of makers! You can:
-            <ul>
-                <li><a href="#donate">Donate</a> to support our programs</li>
-                <li><a href="#volunteer">Volunteer</a> your time and skills</li>
-                <li><a href="#contact">Spread the word</a> about our mission</li>
-            </ul>
-        </p>
-        <h2 id="donate">Donate</h2>
-        <p>
-            Your support helps us provide free or low-cost programs to the community. Click the button below to make a donation:
-            <br>
-            <a href="https://your-donation-link.com" class="cta-button">Donate Now</a>
-        </p>
-        <h2 id="volunteer">Volunteer</h2>
-        <p>
-            We’re always looking for passionate individuals to help us teach, organize events, and more. If you’re interested in volunteering, please email us at <a href="mailto:volunteer@circuitmakers.org">volunteer@circuitmakers.org</a>.
-        </p>
-        <h2 id="contact">Contact Us</h2>
-        <p>
-            Have questions or want to learn more? Reach out to us:
-            <br>
-            Email: <a href="mailto:info@circuitmakers.org">info@circuitmakers.org</a>
-            <br>
-            Phone: +1 (210) 555-1234
+            Have a tutorial or guide you'd like to share? Email us at <a href="mailto:wiki@circuitmakers.org">wiki@circuitmakers.org</a> to contribute to our technical wiki.
         </p>
     </div>
     <footer>
