@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Antonio Circuit Makers - Technical Wiki</title>
+    <title>San Antonio Circuit Makers wiki</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,15 +15,49 @@
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 2rem;
-            text-align: center;
-            position: relative;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            height: 50px; /* Adjust the height as needed */
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .header-logo {
+            height: 200px; /* Adjust based on your logo size */
+        }
+        .header-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .header-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .header-subtitle {
+            font-size: 1.1rem;
+            margin: 0;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .header-buttons a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .header-buttons a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
         }
         .container {
             max-width: 800px;
@@ -32,15 +66,17 @@
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
+        h1, h2 {
             margin-top: 0;
         }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1rem 0;
         }
-        a:hover {
-            text-decoration: underline;
+        .step {
+            margin-bottom: 2rem;
         }
         footer {
             text-align: center;
@@ -49,32 +85,31 @@
             color: white;
             margin-top: 2rem;
         }
-        .cta-button {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 0.5rem 0;
-        }
-        .cta-button:hover {
-            background-color: #45a049;
-        }
-        .back-to-main {
-            text-align: center;
-            margin: 1rem 0;
-        }
     </style>
 </head>
 <body>
+    <!-- Unified Header Bar -->
     <header>
-        <!-- Logo in the top-left corner -->
-        <img src="images\logo.jpg" alt="San Antonio Circuit Makers Logo" class="logo">
-        <h1>San Antonio Circuit Makers - Technical Wiki</h1>
-        <p>Your resource for technical documents, tutorials, and guides.</p>
-        <div class="back-to-main">
-            <a href="https://www.sanantoniocircuitmakers.com" class="cta-button">Back to Main Site</a>
+        <!-- Left Section: Logo and Text -->
+        <div class="header-left">
+            <!-- Logo -->
+            <img src="images/logo.jpg" alt="San Antonio Circuit Makers Logo" class="header-logo">
+
+            <!-- Text -->
+            <div class="header-text">
+                <div class="header-title">
+                    San Antonio Circuit Makers
+                </div>
+                <div class="header-subtitle">
+                    Your resource for technical documents, tutorials, and guides.
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section: Buttons -->
+        <div class="header-buttons">
+            <a href="https://www.sanantoniocircuitmakers.com">Main Site</a>
+            <a href="https://sanantonoiocircuitmakers.github.io/">Root Wiki</a>
         </div>
     </header>
     <div class="container">
@@ -82,29 +117,33 @@
         <p>
             Welcome to the San Antonio Circuit Makers technical wiki! Here, you'll find a collection of documents, tutorials, and guides to help you learn and innovate.
         </p>
-        <h3>Documentation</h3>
+        <h3>Kits</h3>
         <ul>
-            <li><a href="#">Introduction to Electronics</a></li>
-            <li><a href="#">Circuit Design Basics</a></li>
-            <li><a href="#">Soldering Techniques</a></li>
-            <li><a href="#">Microcontroller Programming</a></li>
+            <li><a href="sanantonoiocircuitmakers.github.io/FlashlightKit">Flashlight Kit</a></li>
+            <li><a href="sanantonoiocircuitmakers.github.io/AlpacaKit">Alpaca Kit</a></li>
+            <li><a href="#">Christmas Tree</a></li>
+            <li><a href="sanantonoiocircuitmakers.github.io/2x2MacroProject">2x2 Macroboard</a></li>
+            <li><a href="#">Robot Kit</a></li>
+            <li><a href="#">To the Moon Badge</a></li>
+            <li><a href="#">Iot Builder</a></li>
+            <li><a href="#">Beetle Kit</a></li>
         </ul>
-        <h3>Tutorials</h3>
+        <h3>Classes</h3>
         <ul>
-            <li><a href="#">Building Your First Circuit</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1Ld9-wd5hR513GpZWMzf1Y8eLLLCk-ZW9Qxot6WmB5yc/edit?usp=sharing">Intro to Electronics</a></li>
             <li><a href="#">Using Arduino for Beginners</a></li>
             <li><a href="#">Raspberry Pi Projects</a></li>
             <li><a href="#">PCB Design and Fabrication</a></li>
         </ul>
-        <h3>Guides</h3>
+        <h3>Guide</h3>
         <ul>
-            <li><a href="#">Choosing the Right Components</a></li>
-            <li><a href="#">Troubleshooting Common Issues</a></li>
-            <li><a href="#">Advanced Circuit Analysis</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
         </ul>
         <h2>Contribute</h2>
         <p>
-            Have a tutorial or guide you'd like to share? Email us at <a href="mailto:wiki@circuitmakers.org">wiki@circuitmakers.org</a> to contribute to our technical wiki.
+            Have a tutorial or guide you'd like to share? Email us at <a href="mailto:satxcircuitmakers@gmail.com">wiki@circuitmakers.org</a> to contribute to our technical wiki.
         </p>
     </div>
     <footer>
