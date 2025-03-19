@@ -1,2 +1,2 @@
-Holds the files for the webpage [sanantonoiocircuitmakers.github.io](https://sanantonoiocircuitmakers.github.io)
+Holds the files for the webpage [https://satxcircuitmakers.github.io/Main/](https://satxcircuitmakers.github.io/Main/)
 
